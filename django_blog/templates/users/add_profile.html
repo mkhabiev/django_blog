@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new Profile</title>
+</head>
+<body>
+    <div>
+        <header>
+                <span><a href="/profile">Back</a></span>
+        </header>
+        <form action="/add-profile/" method="post">
+            {% csrf_token %}
+            {{ forms.as_p }}
+            <input type="submit" value="Add new profile" />
+        </form>
+    </div>
+</body>
+</html>

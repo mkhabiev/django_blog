@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{% static 'style_profile.css' %}">
+</head>
+<body>
+    <header>
+        {% include 'users/profile_header.html' %}
+    </header>
+    <div>
+        <ul>
+            {% for i in object_list %}
+                <li class="profile">
+                    <img class="profile-image" src="{{ i.image.url }}" alt="">
+                    <h2><a href="/profile/{{ i.pk}}">{{ i.name }}</a></h2>
+                    <p class="profile-age">{{ i.age }}</p>
+                    <p class="profile-sex">{{ i.sex }}</p>
+                    <p class="profile-hobby">{{ i.hobby }}</p>
+                    <p class="profile-about">{{ i.about }}</p>
+                    <span class="profile-added">{{ i.date_added }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

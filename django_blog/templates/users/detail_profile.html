@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ profile.name }}</title>
+</head>
+<body>
+    <header>
+        {% include 'users/profile_header.html' %}
+    </header>
+    <div>
+        <h2>{{ object.name }}</h2>
+        <p>{{ object.age }}</p>
+        <p>{{ object.sex }}</p>
+        <img src="{{ object.image.url }}" alt="">
+        <p>{{ object.hobby }}</p>
+        <p>{{ object.about }}</p>
+    </div>
+</body>
+</html>

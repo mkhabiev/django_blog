@@ -1,0 +1,26 @@
+.profile{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+}
+.profile-image{
+    width: 1000px;
+    height: 1000px;
+}
+.profile-age{
+    font-size: 25px;
+}
+.profile-sex{
+    font-size: 20px;
+}
+.profile-hobby{
+    font-size: 35px;
+}
+.profile-about{
+    font-size: 60px;
+}
+.site-title{
+    font-size: 20px;
+    color: aqua;
+    margin-right: 400px;
+}
